@@ -1,0 +1,34 @@
+!!! 5
+- ie_html :lang => 'en', :class => 'no-js' do
+  %head
+    = partial "partials/document"
+    -# = partial "partials/document"
+
+  %body{:class => current_page.data.body_class || 'page'}
+    = partial 'partials/header'
+
+    #main_blog(role="main")
+      .article-detail-content.wrapper
+        .project-heading
+          %h1
+            = current_article.title
+
+        .text-wrap
+          %secion.meta-list
+            .meta-item
+              %label IMDB
+              .value= current_article.metadata[:page]['IMDB']
+            .meta-item
+              %label TV.com
+              .value= current_article.metadata[:page]['TV.com']
+            .meta-item
+              %label Rotten Tomatoes
+              .value= current_article.metadata[:page]['Rotten Tomatoes']
+          
+          .article-intro
+            = current_article.metadata[:page]['article_intro']
+          .article-content
+            = yield
+
+    -# = partial 'partials/footer_blog'
+    = partial 'partials/scripts'
