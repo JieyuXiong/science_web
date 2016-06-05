@@ -17,6 +17,9 @@ $description-text: #656565;
 $line-dark: #656565;
 $tag-dark: #141414;
 $text-background: #E4E6E8;
+$podcast_play_btn: #D5D6D6;
+$podcast_border: #DEDEDE;
+$podcast_time: #999999;
 
 body {
 	background: $bg;
@@ -37,6 +40,7 @@ body {
 .magzine_wrapper {
 	@include outer-container;
 	margin-top: -350px;
+	padding: 0px 20px;
 }
 
 .index_row {
@@ -50,8 +54,17 @@ body {
 	@include media($desktop){
       @include span-columns (6.82);
 	}
+	@include media($desktop-small){
+      @include span-columns (6.82);
+	}
 	@include media($tablet){
       @include span-columns (6.82);
+	}
+	@include media($tablet-portrait){
+      @include span-columns (6.82);
+	}
+	@include media($mobile){
+      @include span-columns (12);
 	}
 }
 
@@ -62,8 +75,17 @@ body {
 	@include media($desktop){
       @include span-columns (2.59);
 	}
+	@include media($desktop-small){
+      @include span-columns (2.59);
+	}
 	@include media($tablet){
       @include span-columns (2.59);
+	}
+	@include media($tablet-portrait){
+      @include span-columns (2.59);
+	}
+	@include media($mobile){
+      display: none;
 	}
 }
 
@@ -137,11 +159,13 @@ body {
 }
 
 .thumbnail img{
-  -webkit-transition: all 0.22s linear 0s;
-  -moz-transition: all 0.22s linear 0s;
-  -ms-transition: all 0.22s linear 0s;
-  -o-transition: all 0.22s linear 0s;
-  transition: all 0.22s linear 0s;
+  // -webkit-transition: all 0.22s linear 0s;
+  // -moz-transition: all 0.22s linear 0s;
+  // -ms-transition: all 0.22s linear 0s;
+  // -o-transition: all 0.22s linear 0s;
+  // transition: all 0.22s linear 0s;
+  @include transition(all 0.22s linear 0s);
+
   width: 100%;
 }
 
@@ -158,7 +182,21 @@ body {
 	position: relative;
 	width: 64.1%;
 	float: right;
-	padding: 16px 30px 8px 30px;
+	@include media($desktop){
+      padding: 16px 26px 6px 26px;
+	}
+	@include media($desktop-small){
+      padding: 16px 26px 6px 26px;
+	}
+	@include media($tablet){
+      padding: 16px 26px 6px 26px;
+	}
+	@include media($tablet-portrait){
+      padding: 12px 22px 5px 22px;
+	}
+	@include media($mobile){
+      padding: 16px 26px 6px 26px;
+	}
 }
 
 .number {
@@ -166,21 +204,44 @@ body {
 	font-size: 11px;
 	letter-spacing: 1.5px;
 	margin-bottom: 20px;
+	@include media($tablet-portrait){
+      display: none;
+	}
 }
 
 .article1 {
 	color: white;
-	font-size: 16px;
 	font-family: georgia;
 	font-weight: bold;
-	line-height: 120%;
+	@include media($desktop){
+      font-size: 15px;
+      line-height: 120%;
+	}
+	@include media($desktop-small){
+      font-size: 14px;
+      line-height: 120%;
+	}
+	@include media($tablet){
+      font-size: 14px;
+      line-height: 120%;
+	}
+	@include media($tablet-portrait){
+      font-size: 12px;
+      line-height: 110%;
+	}
 }
 
 .line {
-	margin-top: 12px;
+	margin-top: 10px;
 	height: 2px;
 	width: 26px;
 	background-color: white;
+	@include media($desktop-small){
+      display: none;
+	}
+	@include media($tablet){
+      display: none;
+	}
 }
 
 .tag {
@@ -188,12 +249,16 @@ body {
 	font-size: 10px;
 	letter-spacing: 1px;
 	color: white;
+	@include media($tablet){
+      display: none;
+	}
 }
 
 ///////////////////////////shelf_1///////card_big
 .shelf_wrapper {
 	@include outer-container;
 	margin-top: 100px;
+	padding: 0px 20px;
 }
 
 .section_title {
@@ -223,15 +288,39 @@ body {
 	@include media($desktop){
       @include span-columns (3);
 	}
+	@include media($desktop-small){
+      @include span-columns (3);
+	}
 	@include media($tablet){
       @include span-columns (3);
+	}
+	@include media($tablet-portrait){
+      @include span-columns (6);
+      @include omega(2n);
+	}
+	@include media($mobile){
+      @include span-columns (12);
 	}
 }
 
 .card_big_wrapper:after {
-	padding-top: 143.46%;
 	display: block;
 	content: '';
+	@include media($desktop){
+      padding-top: 143.46%;
+	}
+	@include media($desktop-small){
+      padding-top: 143.46%;
+	}
+	@include media($tablet){
+      padding-top: 143.46%;
+	}
+	@include media($tablet-portrait){
+      padding-top: 75%;
+	}
+	@include media($mobile){
+      padding-top: 75%;
+	}
 }
 
 .card_big {
@@ -254,6 +343,9 @@ body {
 	background-color: white;
 	height: 32.85%;
 	float: top;
+	@include media($mobile){
+      height: 50%;
+	}
 }
 
 .card_thumbnail_big {
@@ -262,6 +354,9 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 32.85%;
+	@include media($mobile){
+      height: 50%;
+	}
 }
 
 .card_thumbnail_big img{
@@ -276,6 +371,9 @@ body {
 .card_big_text {
 	height: 47.15%;
 	padding: 16px 16px;
+	@include media($mobile){
+      height: 30%;
+	}
 }
 
 .date {
@@ -286,21 +384,46 @@ body {
 }
 
 .post_title {
-	font-size: 18px;
 	font-family: georgia;
 	color: $title-text;
-	line-height: 22px;
 	font-weight: bold;
-	margin-top: 12px;
+	@include media($desktop){
+     	font-size: 18px;
+		line-height: 22px;
+		margin-top: 12px;
+	}
+	@include media($desktop-small){
+		font-size: 18px;
+		line-height: 22px;
+		margin-top: 18px;
+	}
+	@include media($tablet){
+     	font-size: 15px;
+		line-height: 18px;
+		margin-top: 18px;
+	}
+	@include media($tablet-portrait){
+     	font-size: 15px;
+		line-height: 18px;
+		margin-top: 12px;
+	}
 }
 
 .description {
-	font-size: 13px;
 	font-family: georgia;
 	color: $description-text;
-	line-height: 18px;
 	font-style: italic;
-	margin-top: 16px;
+	@include media($desktop){
+		font-size: 13px;
+		line-height: 18px;
+		margin-top: 16px;
+	}
+	@include media($desktop-small){
+		display: none;
+	}
+	@include media($tablet){
+		display: none;
+	}
 }
 
 .card_big_text_bottom {
@@ -310,18 +433,59 @@ body {
 }
 
 .line_dark {
-	margin-top: 16px;
 	height: 2px;
-	width: 40px;
 	background-color: $line-dark;
+	@include media($desktop){
+		margin-top: 16px;
+		width: 40px;
+	}
+	@include media($desktop-small){
+		margin-top: 10px;
+		width: 32px;
+	}
+	@include media($tablet){
+		margin-top: 0px;
+		width: 28px;
+	}
+	@include media($tablet-portrait){
+		margin-top: -6px;
+		width: 28px;
+	}
+	@include media($mobile){
+		margin-top: 0px;
+		width: 28px;
+	}
 }
 
 .tag_big {
-	margin-top: 12px;
-	font-size: 11px;
 	font-family: helvetica;
 	color: $tag-dark;
 	letter-spacing: 1.35px;
+	@include media($desktop){
+		margin-top: 12px;
+		font-size: 11px;
+		letter-spacing: 1.35px;
+	}
+	@include media($desktop-small){
+		margin-top: 12px;
+		font-size: 11px;
+		letter-spacing: 1.35px;
+	}
+	@include media($tablet){
+		margin-top: 12px;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	@include media($tablet-portrait){
+		margin-top: 8px;
+		font-size: 9px;
+		letter-spacing: 1px;
+	}
+	@include media($mobile){
+		margin-top: 12px;
+		font-size: 9px;
+		letter-spacing: 1px;
+	}
 }
 
 .card_big:hover .card_thumbnail_big img{
@@ -356,8 +520,18 @@ body {
 	@include media($desktop){
       @include span-columns (3);
 	}
+	@include media($desktop-small){
+      @include span-columns (3);
+	}
 	@include media($tablet){
       @include span-columns (3);
+	}
+	@include media($tablet-portrait){
+      @include span-columns (6);
+      @include omega(2n);
+	}
+	@include media($mobile){
+      @include span-columns (12);
 	}
 }
 
@@ -407,8 +581,22 @@ body {
 }
 
 .card_small_text {
-	height: 39%;
-	padding: 6px 16px 0px 16px;
+	@include media($desktop){
+     	height: 39%;
+		padding: 6px 16px 0px 16px;
+	}
+	@include media($desktop-small){
+		height: 32%;
+		padding: 2px 16px 0px 16px;
+	}
+	@include media($tablet){
+     	height: 30%;
+		padding: 0px 16px 0px 16px;
+	}
+	@include media($tablet-portrait){
+     	height: 30%;
+		padding: 0px 16px 0px 16px;
+	}
 }
 
 .card_small_text_bottom {
@@ -437,6 +625,92 @@ body {
   -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
 }
+
+.line_dark2 {
+	height: 2px;
+	background-color: $line-dark;
+	@include media($desktop){
+		margin-top: 16px;
+		width: 40px;
+	}
+	@include media($desktop-small){
+		margin-top: 28px;
+		width: 32px;
+	}
+	@include media($tablet){
+		margin-top: 15px;
+		width: 28px;
+	}
+	@include media($tablet-portrait){
+		margin-top: 10px;
+		width: 28px;
+	}
+	@include media($mobile){
+		margin-top: 0px;
+		width: 28px;
+	}
+}
+
+.tag_big2 {
+	font-family: helvetica;
+	color: $tag-dark;
+	letter-spacing: 1.35px;
+	@include media($desktop){
+		margin-top: 12px;
+		font-size: 11px;
+		letter-spacing: 1.35px;
+	}
+	@include media($desktop-small){
+		margin-top: 9px;
+		font-size: 11px;
+		letter-spacing: 1.35px;
+	}
+	@include media($tablet){
+		margin-top: 6px;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+	@include media($tablet-portrait){
+		margin-top: 7px;
+		font-size: 9px;
+		letter-spacing: 1px;
+	}
+	@include media($mobile){
+		margin-top: 12px;
+		font-size: 9px;
+		letter-spacing: 1px;
+	}
+}
+
+
+.post_title2 {
+	font-family: georgia;
+	color: $title-text;
+	font-weight: bold;
+	@include media($desktop){
+     	font-size: 18px;
+		line-height: 22px;
+		margin-top: 12px;
+	}
+	@include media($desktop-small){
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 16px;
+	}
+	@include media($tablet){
+     	font-size: 15px;
+		line-height: 18px;
+		margin-top: 13px;
+	}
+	@include media($tablet-portrait){
+     	font-size: 15px;
+		line-height: 18px;
+		margin-top: 12px;
+	}
+}
+
+
+
 
 
 ///////////////////////////shelf_3///////card_tiny
@@ -906,7 +1180,7 @@ body {
 	width: 11px;
 	height: 13px;
 	margin-top: 7px;
-	margin-left: 13px;
+	margin-left: 13.5px;
 }
 
 .card_video:hover .video_play_button {
@@ -914,4 +1188,268 @@ body {
 	border-width: 1px;
 	border-color: white;
 	border-style: solid;
+}
+
+
+////////////////////////////////////////////////////  podcast_card
+.podcast_wrapper {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0px 0px 0px 0px;
+	height: 90px;
+	@include media($desktop){
+      @include span-columns (12);
+	}
+	@include media($tablet){
+      @include span-columns (3);
+	}
+}
+
+.podcast_card {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: $bg;
+	-webkit-transition: all 0.22s linear 0s;
+ 	 -moz-transition: all 0.22s linear 0s;
+ 	 -ms-transition: all 0.22s linear 0s;
+ 	 -o-transition: all 0.22s linear 0s;
+ 	 transition: all 0.22s linear 0s;
+}
+
+////////////////////////////////////////////////////  podcast_card ///// play button
+
+.podcast_play_button_wrapper {
+	display: block;
+	float: left;
+	width: 38px;
+	height: 38px;
+	margin-top: 29px;
+	margin-left: 20px;
+}
+
+.podcast_play_button {
+	float: left;
+	width: 38px;
+	height: 38px;
+	z-index: 2;
+	background-color: $podcast_play_btn;
+	border-radius: 50%;
+
+	-webkit-transition: all 0.22s linear 0s;
+  	-moz-transition: all 0.22s linear 0s;
+  	-ms-transition: all 0.22s linear 0s;
+  	-o-transition: all 0.22s linear 0s;
+  	transition: all 0.22s linear 0s;
+}
+
+.triangle_podcast {
+	width: 11px;
+	height: 13px;
+	margin-top: 7.5px;
+	margin-left: 13.5px;
+}
+
+////////////////////////////////////////////////////  podcast_card ///// download button
+.podcast_download_button_wrapper {
+	display: block;
+	float: left;
+	width: 38px;
+	height: 38px;
+	margin-top: 29px;
+	margin-left: 30px;
+}
+
+.podcast_download_button {
+	float: left;
+	width: 38px;
+	height: 38px;
+	background-color: $podcast_play_btn;
+	border-radius: 50%;
+
+	-webkit-transition: all 0.22s linear 0s;
+  	-moz-transition: all 0.22s linear 0s;
+  	-ms-transition: all 0.22s linear 0s;
+  	-o-transition: all 0.22s linear 0s;
+  	transition: all 0.22s linear 0s;
+}
+
+.download {
+	width: 12.5px;
+	height: 14.5px;
+	margin-top: 8.5px;
+	margin-left: 12.5px;
+}
+
+////////////////////////////////////////////////////  podcast_card ///// title
+
+.podcast_title_wrapper {
+	float: left;
+	display: table;
+	width: 32%;
+	height: 100%;
+	margin-left: 50px;
+	color: $section-text;
+	font-family: georgia;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.podcast_title {
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 5px;
+}
+
+////////////////////////////////////////////////////  podcast_card ///// tag
+
+.podcast_tag_wrapper {
+	display: block;
+	float: left;
+	margin-left: 45px;
+	width: 10%;
+}
+
+.line_podcast {
+	margin-top: 30px;
+	height: 2px;
+	width: 20px;
+	background-color: $line-dark;
+}
+
+.tag_podcast {
+	margin-top: 10px;
+	font-size: 10px;
+	font-family: helvetica;
+	color: $tag-dark;
+	letter-spacing: 1.35px;
+}
+
+////////////////////////////////////////////////////  podcast_card ///// time
+
+.podcast_time_wrapper {
+	display: block;
+	float: left;
+	margin-left: 45px;
+	width: 20%;
+}
+
+.date_podcast {
+	margin-top: 24px;
+	font-family: helvetica;
+	font-size: 13px;
+	line-height: 16px;
+	color: $podcast_time;
+}
+
+.time_podcast {
+	margin-top: 4px;
+	font-family: helvetica;
+	font-size: 12px;
+	line-height: 16px;
+	color: $podcast_time;
+}
+
+
+////////////////////////////////////////////////////  podcast_card ///// filter
+.podcast_filter_wrapper {
+	position: relative;
+	display: inline-block;
+	margin: 60px 0px 0px 0px;
+	height: 40px;
+	@include media($desktop){
+      @include span-columns (12);
+	}
+	@include media($tablet){
+      @include span-columns (3);
+	}
+}
+
+.podcast_filter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	-webkit-transition: all 0.22s linear 0s;
+ 	 -moz-transition: all 0.22s linear 0s;
+ 	 -ms-transition: all 0.22s linear 0s;
+ 	 -o-transition: all 0.22s linear 0s;
+ 	 transition: all 0.22s linear 0s;
+}
+
+.recent_wrapper {
+	display: block;
+	float: left;
+	font-family: helvetica;
+	font-size: 12px;
+	letter-spacing: 1.75px;
+	color: $podcast_time;
+	width: 32%;
+	margin-left: 176px;
+}
+
+.filter_text {
+	display: block;
+	float: left;
+}
+
+.arrow_img {
+	display: block;
+	float: left;
+	width: 12px;
+	height: 8px;
+	margin-left: 8px;
+}
+
+.series_wrapper,
+.topics_wrapper {
+	display: block;
+	float: left;
+	margin-left: 45px;
+	width: 10%;
+	font-family: helvetica;
+	font-size: 12px;
+	letter-spacing: 1.75px;
+	color: $podcast_time;
+}
+
+
+.podcast_card2 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	border-top: 1px;
+	border-top-color: $podcast_border;
+	border-top-style: solid;
+
+	background-color: $bg;
+	-webkit-transition: all 0.22s linear 0s;
+ 	 -moz-transition: all 0.22s linear 0s;
+ 	 -ms-transition: all 0.22s linear 0s;
+ 	 -o-transition: all 0.22s linear 0s;
+ 	 transition: all 0.22s linear 0s;
+}
+
+.podcast_play_button:hover {
+	background-color: $text-hover-blue;
+}
+
+.podcast_download_button:hover {
+	background-color: $text-hover-blue;
+}
+
+.podcast_card:hover {
+	background-color: white;
+}
+
+.podcast_card2:hover {
+	background-color: white;
 }
