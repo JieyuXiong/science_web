@@ -16,8 +16,8 @@ $max-width: 75rem;
 
 $large-screen: 75rem;
 
-$desktop: new-breakpoint(min-width 1160px 12);
-$desktop-small: new-breakpoint(max-width 1160px 12);
-$tablet: new-breakpoint(max-width 1000px 12);
-$tablet-portrait: new-breakpoint(max-width 870px 12);
-$mobile: new-breakpoint(max-width 550px 12);
+$desktop: new-breakpoint(min-width 1200px 12);
+$desktop-small: new-breakpoint(max-width 1200px 12);
+$tablet: new-breakpoint(max-width 1024px 12);
+$tablet-portrait: new-breakpoint(max-width 768px 12);
+$mobile: new-breakpoint(max-width 640px 12);

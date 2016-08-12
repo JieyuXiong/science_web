@@ -30,6 +30,13 @@ body {
 	img {
 		width: 100%;
 	}
+	@include media($tablet-portrait){
+      width: 110%;
+	}
+	@include media($mobile){
+      width: 120%;
+      margin-left: -40px;
+	}
 }
 
 // .hero_bar {
@@ -41,6 +48,18 @@ body {
 	@include outer-container;
 	margin-top: -350px;
 	padding: 0px 20px;
+	@include media($desktop-small){
+      margin-top: -300px;
+	}
+	@include media($tablet){
+      margin-top: -250px;
+	}
+	@include media($tablet-portrait){
+      margin-top: -200px;
+	}
+	@include media($mobile){
+      margin-top: -100px;
+	}
 }
 
 .index_row {
@@ -58,13 +77,10 @@ body {
       @include span-columns (6.82);
 	}
 	@include media($tablet){
-      @include span-columns (6.82);
-	}
-	@include media($tablet-portrait){
-      @include span-columns (6.82);
+      @include span-columns (2.59);
 	}
 	@include media($mobile){
-      @include span-columns (12);
+      @include span-columns (4);
 	}
 }
 
@@ -81,11 +97,8 @@ body {
 	@include media($tablet){
       @include span-columns (2.59);
 	}
-	@include media($tablet-portrait){
-      @include span-columns (2.59);
-	}
 	@include media($mobile){
-      display: none;
+      @include span-columns (4);
 	}
 }
 
@@ -94,6 +107,9 @@ body {
 	padding-top: 46.5%;
 	display: block;
 	content: '';
+	@include media($tablet){
+	  padding-top: 131.25%;
+	}
 }
 
 .mag_box_small_wrapper:after {
@@ -127,6 +143,9 @@ body {
 	height: 100%;
 	float: left;
 	margin-right: 0px;
+	@include media($tablet){
+	  width: 100%;
+	}
 }
 
 .mag_box_large:hover .thumbnail img{
@@ -149,6 +168,9 @@ body {
 	overflow: hidden;
 	width: 35.9%;
 	height: 100%;
+	@include media($tablet){
+	  width: 100%;
+	}
 }
 
 .thumbnail_small {
@@ -186,16 +208,10 @@ body {
       padding: 16px 26px 6px 26px;
 	}
 	@include media($desktop-small){
-      padding: 16px 26px 6px 26px;
+      padding: 12px 20px 4px 20px;
 	}
 	@include media($tablet){
-      padding: 16px 26px 6px 26px;
-	}
-	@include media($tablet-portrait){
-      padding: 12px 22px 5px 22px;
-	}
-	@include media($mobile){
-      padding: 16px 26px 6px 26px;
+	  display: none;
 	}
 }
 
@@ -204,9 +220,6 @@ body {
 	font-size: 11px;
 	letter-spacing: 1.5px;
 	margin-bottom: 20px;
-	@include media($tablet-portrait){
-      display: none;
-	}
 }
 
 .article1 {
@@ -225,10 +238,6 @@ body {
       font-size: 14px;
       line-height: 120%;
 	}
-	@include media($tablet-portrait){
-      font-size: 12px;
-      line-height: 110%;
-	}
 }
 
 .line {
@@ -236,9 +245,6 @@ body {
 	height: 2px;
 	width: 26px;
 	background-color: white;
-	@include media($desktop-small){
-      display: none;
-	}
 	@include media($tablet){
       display: none;
 	}
@@ -295,32 +301,19 @@ body {
       @include span-columns (3);
 	}
 	@include media($tablet-portrait){
-      @include span-columns (6);
-      @include omega(2n);
+      @include span-columns (3);
 	}
 	@include media($mobile){
-      @include span-columns (12);
+		margin: 40px 0px 0px 0px;
+      @include span-columns (6);
+      @include omega (2n);
 	}
 }
 
 .card_big_wrapper:after {
 	display: block;
 	content: '';
-	@include media($desktop){
-      padding-top: 143.46%;
-	}
-	@include media($desktop-small){
-      padding-top: 143.46%;
-	}
-	@include media($tablet){
-      padding-top: 143.46%;
-	}
-	@include media($tablet-portrait){
-      padding-top: 75%;
-	}
-	@include media($mobile){
-      padding-top: 75%;
-	}
+	padding-top: 143.46%;
 }
 
 .card_big {
@@ -343,9 +336,6 @@ body {
 	background-color: white;
 	height: 32.85%;
 	float: top;
-	@include media($mobile){
-      height: 50%;
-	}
 }
 
 .card_thumbnail_big {
@@ -354,9 +344,6 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 32.85%;
-	@include media($mobile){
-      height: 50%;
-	}
 }
 
 .card_thumbnail_big img{
@@ -371,9 +358,6 @@ body {
 .card_big_text {
 	height: 47.15%;
 	padding: 16px 16px;
-	@include media($mobile){
-      height: 30%;
-	}
 }
 
 .date {
@@ -381,6 +365,9 @@ body {
 	font-family: helvetica;
 	color: $date-text;
 	line-height: 14px;
+	@include media($tablet){
+		display: none;
+	}
 }
 
 .post_title {
@@ -393,19 +380,24 @@ body {
 		margin-top: 12px;
 	}
 	@include media($desktop-small){
-		font-size: 18px;
-		line-height: 22px;
-		margin-top: 18px;
+     	font-size: 16px;
+		line-height: 20px;
+		margin-top: 12px;
 	}
 	@include media($tablet){
      	font-size: 15px;
-		line-height: 18px;
-		margin-top: 18px;
+		line-height: 19px;
+		margin-top: 2%;
 	}
 	@include media($tablet-portrait){
-     	font-size: 15px;
-		line-height: 18px;
-		margin-top: 12px;
+     	font-size: 13px;
+		line-height: 17px;
+		margin-top: 2%;
+	}
+	@include media($mobile){
+     	font-size: 17px;
+		line-height: 21px;
+		margin-top: 2%;
 	}
 }
 
@@ -419,7 +411,9 @@ body {
 		margin-top: 16px;
 	}
 	@include media($desktop-small){
-		display: none;
+		font-size: 11px;
+		line-height: 15px;
+		margin-top: 16px;
 	}
 	@include media($tablet){
 		display: none;
@@ -440,20 +434,20 @@ body {
 		width: 40px;
 	}
 	@include media($desktop-small){
-		margin-top: 10px;
-		width: 32px;
+		margin-top: 18px;
+		width: 40px;
 	}
 	@include media($tablet){
-		margin-top: 0px;
-		width: 28px;
+		margin-top: 6.5%;
+		width: 40px;
 	}
 	@include media($tablet-portrait){
-		margin-top: -6px;
-		width: 28px;
+		display: none;
 	}
 	@include media($mobile){
-		margin-top: 0px;
-		width: 28px;
+		margin-top: 6.5%;
+		width: 40px;
+		display: block;
 	}
 }
 
@@ -467,22 +461,21 @@ body {
 		letter-spacing: 1.35px;
 	}
 	@include media($desktop-small){
-		margin-top: 12px;
-		font-size: 11px;
-		letter-spacing: 1.35px;
+		margin-top: 10px;
+		font-size: 10px;
+		letter-spacing: 1.2px;
 	}
 	@include media($tablet){
-		margin-top: 12px;
-		font-size: 10px;
-		letter-spacing: 1px;
-	}
-	@include media($tablet-portrait){
-		margin-top: 8px;
+		margin-top: 3.5%;
 		font-size: 9px;
 		letter-spacing: 1px;
 	}
+	@include media($tablet-portrait){
+		display: none;
+	}
 	@include media($mobile){
-		margin-top: 12px;
+		display: block;
+		margin-top: 3.5%;
 		font-size: 9px;
 		letter-spacing: 1px;
 	}
@@ -523,15 +516,10 @@ body {
 	@include media($desktop-small){
       @include span-columns (3);
 	}
-	@include media($tablet){
-      @include span-columns (3);
-	}
-	@include media($tablet-portrait){
-      @include span-columns (6);
-      @include omega(2n);
-	}
 	@include media($mobile){
-      @include span-columns (12);
+		margin: 40px 0px 0px 0px;
+      @include span-columns (6);
+      @include omega (2n);
 	}
 }
 
@@ -581,21 +569,9 @@ body {
 }
 
 .card_small_text {
+	height: 39%;
+	padding: 6px 16px 0px 16px;
 	@include media($desktop){
-     	height: 39%;
-		padding: 6px 16px 0px 16px;
-	}
-	@include media($desktop-small){
-		height: 32%;
-		padding: 2px 16px 0px 16px;
-	}
-	@include media($tablet){
-     	height: 30%;
-		padding: 0px 16px 0px 16px;
-	}
-	@include media($tablet-portrait){
-     	height: 30%;
-		padding: 0px 16px 0px 16px;
 	}
 }
 
@@ -629,25 +605,15 @@ body {
 .line_dark2 {
 	height: 2px;
 	background-color: $line-dark;
+	width: 40px;
 	@include media($desktop){
 		margin-top: 16px;
-		width: 40px;
 	}
 	@include media($desktop-small){
-		margin-top: 28px;
-		width: 32px;
+		margin-top: 11%;
 	}
 	@include media($tablet){
-		margin-top: 15px;
-		width: 28px;
-	}
-	@include media($tablet-portrait){
-		margin-top: 10px;
-		width: 28px;
-	}
-	@include media($mobile){
-		margin-top: 0px;
-		width: 28px;
+		display: none;
 	}
 }
 
@@ -661,24 +627,12 @@ body {
 		letter-spacing: 1.35px;
 	}
 	@include media($desktop-small){
-		margin-top: 9px;
-		font-size: 11px;
-		letter-spacing: 1.35px;
+		margin-top: 8px;
+		font-size: 10px;
+		letter-spacing: 1.2px;
 	}
 	@include media($tablet){
-		margin-top: 6px;
-		font-size: 10px;
-		letter-spacing: 1px;
-	}
-	@include media($tablet-portrait){
-		margin-top: 7px;
-		font-size: 9px;
-		letter-spacing: 1px;
-	}
-	@include media($mobile){
-		margin-top: 12px;
-		font-size: 9px;
-		letter-spacing: 1px;
+		display: none;
 	}
 }
 
@@ -693,19 +647,24 @@ body {
 		margin-top: 12px;
 	}
 	@include media($desktop-small){
-		font-size: 16px;
+     	font-size: 16px;
 		line-height: 20px;
-		margin-top: 16px;
+		margin-top: 12px;
 	}
 	@include media($tablet){
-     	font-size: 15px;
+     	font-size: 14px;
 		line-height: 18px;
-		margin-top: 13px;
+		margin-top: 2%;
 	}
 	@include media($tablet-portrait){
-     	font-size: 15px;
-		line-height: 18px;
-		margin-top: 12px;
+     	font-size: 13px;
+		line-height: 17px;
+		margin-top: 1%;
+	}
+	@include media($mobile){
+     	font-size: 16px;
+		line-height: 20px;
+		margin-top: 2%;
 	}
 }
 
@@ -722,8 +681,16 @@ body {
 	@include media($desktop){
       @include span-columns (3);
 	}
-	@include media($tablet){
+	@include media($desktop-small){
       @include span-columns (3);
+	}
+	@include media($tablet-portrait){
+      @include span-columns (4);
+	}
+	@include media($mobile){
+		margin: 40px 0px 0px 0px;
+      @include span-columns (6);
+      @include omega (2n);
 	}
 }
 
@@ -740,8 +707,16 @@ body {
 	@include media($desktop){
       @include span-columns (3);
 	}
-	@include media($tablet){
+	@include media($desktop-small){
       @include span-columns (3);
+	}
+	@include media($tablet-portrait){
+      display:none;
+	}
+	@include media($mobile){
+		margin: 40px 0px 0px 0px;
+      display:block;
+      @include span-columns (6);
 	}
 }
 
@@ -832,6 +807,18 @@ body {
 	line-height: 17px;
 	font-weight: bold;
 	margin-top: 0px;
+	@include media($desktop-small){
+      font-size: 13px;
+      line-height: 16px;
+	}
+	@include media($tablet){
+      font-size: 12px;
+      line-height: 15px;
+	}
+	@include media($mobile){
+      font-size: 13px;
+      line-height: 16px;
+	}
 }
 
 
@@ -841,6 +828,12 @@ body {
 	font-family: helvetica;
 	color: $tag-dark;
 	letter-spacing: 1.35px;
+	@include media($desktop-small){
+      margin-top: 5px;
+	}
+	@include media($tablet){
+      display: none;
+	}
 }
 
 ////////////////////////////////////////////////////////////recommended
@@ -865,6 +858,12 @@ body {
 	padding: 16px 16px;
 	float: left;
 	background-color: $text-background;
+	@include media($desktop-small){
+      padding: 14px 16px;
+	}
+	@include media($tablet){
+      padding: 6px 12px;
+	}
 }
 
 .recommend_text {
@@ -872,6 +871,10 @@ body {
 	color: #999999;
 	font-size: 12px;
 	font-family: helvetica;
+	@include media($tablet){
+      font-size: 10px;
+      margin-bottom: 3px;
+	}
 }
 
 .line_dark_tiny {
@@ -879,6 +882,9 @@ body {
 	height: 2px;
 	width: 20px;
 	background-color: $line-dark;
+	@include media($tablet){
+      display: none;
+	}
 }
 
 ////////////////////////////////////////////////////////////Special Report
@@ -892,7 +898,14 @@ body {
 	@include media($desktop){
       @include span-columns (12);
 	}
+	@include media($desktop-small){
+      @include span-columns (12);
+	}
 	@include media($tablet){
+      @include span-columns (12);
+	}
+	@include media($mobile){
+	  margin: 40px 0px 0px 0px;
       @include span-columns (12);
 	}
 }
@@ -910,6 +923,26 @@ body {
 	width: 40%;
 	height: 100%;
 	float: left;
+	@include media($desktop-small){
+     	padding-top: 50px;
+		padding-left: 70px;
+	}
+	@include media($tablet){
+		width: 50%;
+     	padding-top: 32px;
+		padding-left: 50px;
+	}
+	@include media($tablet-portrait){
+		width: 100%;
+     	padding-top: 30px;
+		padding-left: 40px;
+	}
+	@include media($mobile){
+		width: 100%;
+     	padding-top: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 .topic_title {
@@ -919,6 +952,18 @@ body {
 	font-style: italic;
 	font-weight: bold;
 	color: white;
+	@include media($desktop-small){
+     	font-size: 28px;
+		line-height: 38px;
+	}
+	@include media($tablet){
+     	font-size: 24px;
+		line-height: 32px;
+	}
+	@include media($tablet-portrait){
+     	font-size: 24px;
+		line-height: 32px;
+	}
 }
 
 .topic_description {
@@ -926,6 +971,17 @@ body {
 	font-size: 18px;
 	font-family: Georgia;
 	color: white;
+	@include media($desktop-small){
+		font-size: 17px;
+     	margin-top: 36px;
+	}
+	@include media($tablet){
+		font-size: 14px;
+     	margin-top: 30px;
+	}
+	@include media($mobile){
+		display: none;
+	}
 }
 
 .topic_time {
@@ -933,6 +989,17 @@ body {
 	font-size: 12px;
 	font-family: helvetica;
 	color: white;
+	@include media($desktop-small){
+		margin-top: 40px;
+		font-size: 12px;
+	}
+	@include media($tablet){
+		margin-top: 30px;
+		font-size: 12px;
+	}
+	@include media($mobile){
+		display: none;
+	}
 }
 
 
@@ -955,23 +1022,37 @@ body {
 	height: 100%;
 	float: right;
 	margin-top: 22px;
+	@include media($desktop-small){
+     	margin-top: 20px;
+	}
+	@include media($tablet){
+     	margin-top: 16px;
+	}
+	@include media($tablet-portrait){
+     	display: none;
+	}
 }
 
 .card_tiny_wrapper_R {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
-	margin: 8px 0px 8px 400px;
+	margin: 8px 0px 8px 50%;
 	@include media($desktop){
       @include span-columns (5);
 	}
+	@include media($desktop-small){
+		margin: 6px 0px 6px 50%;
+      @include span-columns (5);
+	}
 	@include media($tablet){
-      @include span-columns (3);
+		margin: 5px 0px 5px 50%;
+      @include span-columns (5);
 	}
 }
 
 .card_tiny_wrapper_R:after {
-	padding-top: 34.03%;
+	padding-top: 33%;
 	display: block;
 	content: '';
 }
@@ -983,12 +1064,17 @@ body {
 	position: relative;
 	display: inline-block;
 	margin: 60px 0px 0px 0px;
-	background-image: url(../../images_s/information/info_bg.png);
-	background-size: 100% 100%;
 	@include media($desktop){
       @include span-columns (12);
 	}
+	@include media($desktop-small){
+      @include span-columns (12);
+	}
 	@include media($tablet){
+      @include span-columns (12);
+	}
+	@include media($mobile){
+		margin: 40px 0px 0px 0px;
       @include span-columns (12);
 	}
 }
@@ -999,6 +1085,17 @@ body {
 	content: '';
 }
 
+.card_info {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: white;
+	background-image: url(../../images_s/information/info_bg.png);
+	background-size: 100% 100%;
+}
+
 .text_info_wrapper {
 	position: relative;
 	padding-top: 40px;
@@ -1006,6 +1103,17 @@ body {
 	width: 45%;
 	height: 100%;
 	float: right;
+	@include media($desktop-small){
+		padding-top: 30px;
+	}
+	@include media($tablet-portrait){
+		padding-top: 16px;
+	}
+	@include media($mobile){
+		padding-top: 16px;
+		width: 55%;
+		padding-right: 16px;
+	}
 }
 
 .topic_info_title {
@@ -1015,6 +1123,22 @@ body {
 	font-style: italic;
 	font-weight: bold;
 	color: $section-text;
+	@include media($desktop-small){
+		font-size: 28px;
+		line-height: 38px;
+	}
+	@include media($tablet){
+		font-size: 24px;
+		line-height: 34px;
+	}
+	@include media($tablet-portrait){
+		font-size: 20px;
+		line-height: 30px;
+	}
+	@include media($mobile){
+		font-size: 18px;
+		line-height: 25px;
+	}
 }
 
 .topic_info_description {
@@ -1022,6 +1146,13 @@ body {
 	font-size: 18px;
 	font-family: Georgia;
 	color: $description-text;
+	@include media($desktop-small){
+		margin-top: 26px;
+		font-size: 18px;
+	}
+	@include media($desktop-small){
+		display: none;
+	}
 }
 
 .topic_info_time {
@@ -1029,6 +1160,12 @@ body {
 	font-size: 12px;
 	font-family: helvetica;
 	color: $date-text;
+	@include media($desktop-small){
+		margin-bottom: 16px;
+	}
+	@include media($tablet-portrait){
+		display: none;
+	}
 }
 
 .view_more {
@@ -1043,10 +1180,23 @@ body {
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-family: helvetica;
-	margin-top: 68px;
+	margin-top: 58px;
 	margin-left: 3px;
 	cursor: pointer;
 	color: $tag-dark;
+	@include media($desktop-small){
+		margin-top: 11%;
+	}
+	@include media($tablet){
+		margin-top: 19%;
+		width: 120px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 11px;
+	}
+	@include media($mobile){
+		display: none;
+	}
 
 	-webkit-transition: all 0.22s linear 0s;
   	-moz-transition: all 0.22s linear 0s;
@@ -1073,8 +1223,14 @@ body {
 	@include media($desktop){
       @include span-columns (3);
 	}
-	@include media($tablet){
+	@include media($desktop-small){
       @include span-columns (3);
+	}
+
+	@include media($mobile){
+	  margin: 40px 0px 0px 0px;
+      @include span-columns (6);
+      @include omega (2n);
 	}
 }
 
@@ -1150,10 +1306,25 @@ body {
 // }
 
 .video_title {
+	@include media($tablet){
+      font-size: 14px;
+	}
+	@include media($tablet-portrait){
+      font-size: 12px;
+	}
+	@include media($mobile){
+      font-size: 15px;
+	}
+
 	font-family: georgia;
 	font-size: 15px;
-	padding-top: 5.5%;
+	padding-top: 5%;
 	padding-left: 4%;
+	display: block;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 90%;
+    overflow: hidden
 }
 
 .video_play_button {
@@ -1174,6 +1345,26 @@ body {
   	-ms-transition: all 0.22s linear 0s;
   	-o-transition: all 0.22s linear 0s;
   	transition: all 0.22s linear 0s;
+
+	@include media($tablet){
+      width: 34px;
+	  height: 34px;
+	  margin-top: 20%;
+	  margin-left: 41.8%;
+	}
+	@include media($tablet-portrait){
+      width: 30px;
+	  height: 30px;
+	  margin-top: 19%;
+	  margin-left: 40%;
+	}
+	@include media($mobile){
+      width: 38px;
+	  height: 38px;
+	  margin-top: 21%;
+	  margin-left: 43.4%;
+	}
+
 }
 
 .triangle {
@@ -1181,6 +1372,31 @@ body {
 	height: 13px;
 	margin-top: 7px;
 	margin-left: 13.5px;
+
+	-webkit-transition: all 0.22s linear 0s;
+  	-moz-transition: all 0.22s linear 0s;
+  	-ms-transition: all 0.22s linear 0s;
+  	-o-transition: all 0.22s linear 0s;
+  	transition: all 0.22s linear 0s;
+
+	@include media($tablet){
+      width: 9px;
+	  height: 11px;
+	  margin-top: 3px;
+	  margin-left: 13.5px;
+	}
+
+	@include media($tablet-portrait){
+      margin-top: 2px;
+	  margin-left: 10px;
+	}
+
+	@include media($mobile){
+	  width: 11px;
+	  height: 13px;
+      margin-top: 7px;
+	  margin-left: 13.5px;
+	}
 }
 
 .card_video:hover .video_play_button {
@@ -1201,8 +1417,11 @@ body {
 	@include media($desktop){
       @include span-columns (12);
 	}
+	@include media($desktop-small){
+      @include span-columns (12);
+	}
 	@include media($tablet){
-      @include span-columns (3);
+      @include span-columns (12);
 	}
 }
 
@@ -1229,12 +1448,31 @@ body {
 	height: 38px;
 	margin-top: 29px;
 	margin-left: 20px;
+
+	@include media($tablet){
+      width: 34px;
+	  height: 34px;
+	  margin-top: 29px;
+	  margin-left: 20px;
+	}
+	@include media($tablet-portrait){
+      width: 30px;
+	  height: 30px;
+	  margin-top: 29px;
+	  margin-left: 20px;
+	}
+	@include media($mobile){
+      width: 30px;
+	  height: 30px;
+	  margin-top: 29px;
+	  margin-left: 20px;
+	}
 }
 
 .podcast_play_button {
 	float: left;
-	width: 38px;
-	height: 38px;
+	width: 100%;
+	height: 100%;
 	z-index: 2;
 	background-color: $podcast_play_btn;
 	border-radius: 50%;
@@ -1249,8 +1487,25 @@ body {
 .triangle_podcast {
 	width: 11px;
 	height: 13px;
-	margin-top: 7.5px;
-	margin-left: 13.5px;
+	margin-top: 6.5px;
+	margin-left: 14.5px;
+
+	@include media($tablet){
+      width: 9px;
+	  height: 11px;
+	  margin-top: 3px;
+	  margin-left: 13.5px;
+	}
+
+	@include media($tablet-portrait){
+      margin-top: 2px;
+	  margin-left: 10px;
+	}
+
+	@include media($mobile){
+	  margin-top: 1.8px;
+	  margin-left: 10.5px;
+	}
 }
 
 ////////////////////////////////////////////////////  podcast_card ///// download button
@@ -1261,12 +1516,31 @@ body {
 	height: 38px;
 	margin-top: 29px;
 	margin-left: 30px;
+
+	@include media($tablet){
+      width: 34px;
+	  height: 34px;
+	  margin-top: 29px;
+	  margin-left: 30px;
+	}
+	@include media($tablet-portrait){
+      width: 30px;
+	  height: 30px;
+	  margin-top: 29px;
+	  margin-left: 20px;
+	}
+	@include media($mobile){
+      width: 30px;
+	  height: 30px;
+	  margin-top: 29px;
+	  margin-left: 20px;
+	}
 }
 
 .podcast_download_button {
 	float: left;
-	width: 38px;
-	height: 38px;
+	width: 100%;
+	height: 100%;
 	background-color: $podcast_play_btn;
 	border-radius: 50%;
 
@@ -1282,6 +1556,25 @@ body {
 	height: 14.5px;
 	margin-top: 8.5px;
 	margin-left: 12.5px;
+
+	@include media($tablet){
+      width: 11.5px;
+	  height: 13.5px;
+	  margin-top: 5.5px;
+	  margin-left: 11px;
+	}
+	@include media($tablet-portrait){
+      width: 10px;
+	  height: 12px;
+	  margin-top: 3.5px;
+	  margin-left: 9.5px;
+	}
+	@include media($mobile){
+      width: 10px;
+	  height: 12px;
+	  margin-top: 3.5px;
+	  margin-left: 9.5px;
+	}
 }
 
 ////////////////////////////////////////////////////  podcast_card ///// title
@@ -1297,6 +1590,26 @@ body {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 22px;
+	@include media($desktop-small){
+      font-size: 17px;
+	  line-height: 21px;
+	  margin-left: 44px;
+	}
+	@include media($tablet){
+      width: 40%;
+      margin-left: 50px;
+	}
+	@include media($tablet-portrait){
+      width: 35%;
+      font-size: 15px;
+	  line-height: 19px;
+      margin-left: 40px;
+	}
+	@include media($mobile){
+      width: 60%;
+      font-size: 14px;
+	  line-height: 18px;
+	}
 }
 
 .podcast_title {
@@ -1312,6 +1625,15 @@ body {
 	float: left;
 	margin-left: 45px;
 	width: 10%;
+	@include media($desktop-small){
+      margin-left: 30px;
+	}
+	@include media($tablet){
+      width: 13%;
+	}
+	@include media($mobile){
+      display: none;
+	}
 }
 
 .line_podcast {
@@ -1327,6 +1649,9 @@ body {
 	font-family: helvetica;
 	color: $tag-dark;
 	letter-spacing: 1.35px;
+	@include media($tablet-portrait){
+      font-size: 9px;
+	}
 }
 
 ////////////////////////////////////////////////////  podcast_card ///// time
@@ -1336,6 +1661,12 @@ body {
 	float: left;
 	margin-left: 45px;
 	width: 20%;
+	@include media($desktop-small){
+      margin-left: 30px;
+	}
+	@include media($tablet){
+      display: none;
+	}
 }
 
 .date_podcast {
@@ -1344,6 +1675,10 @@ body {
 	font-size: 13px;
 	line-height: 16px;
 	color: $podcast_time;
+	@include media($desktop-small){
+      font-size: 12px;
+	  line-height: 15px;
+	}
 }
 
 .time_podcast {
@@ -1352,6 +1687,8 @@ body {
 	font-size: 12px;
 	line-height: 16px;
 	color: $podcast_time;
+	font-size: 11px;
+	line-height: 14px;
 }
 
 
@@ -1364,8 +1701,8 @@ body {
 	@include media($desktop){
       @include span-columns (12);
 	}
-	@include media($tablet){
-      @include span-columns (3);
+	@include media($desktop-small){
+      @include span-columns (12);
 	}
 }
 
@@ -1391,6 +1728,25 @@ body {
 	color: $podcast_time;
 	width: 32%;
 	margin-left: 176px;
+	@include media($desktop-small){
+      width: 30%;
+      margin-left: 170px;
+	}
+	@include media($tablet){
+      width: 36.5%;
+      margin-left: 170px;
+      font-size: 11px;
+	}
+	@include media($tablet-portrait){
+      width: 38%;
+      margin-left: 142px;
+      font-size: 11px;
+	}
+	@include media($mobile){
+      width: 50%;
+      margin-left: 142px;
+      font-size: 11px;
+	}
 }
 
 .filter_text {
@@ -1416,6 +1772,23 @@ body {
 	font-size: 12px;
 	letter-spacing: 1.75px;
 	color: $podcast_time;
+	@include media($desktop-small){
+      width: 8%;
+      margin-left: 52px;
+	}
+	@include media($tablet){
+      width: 10%;
+      margin-left: 60px;
+      font-size: 11px;
+	}
+	@include media($tablet-portrait){
+      width: 15%;
+      margin-left: 10px;
+      font-size: 11px;
+	}
+	@include media($mobile){
+      display: none;
+	}
 }
 
 
