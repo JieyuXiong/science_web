@@ -105,3 +105,13 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+# Global site settings (not shown here)
+set :site_url, ""
+# ...
+
+configure :build do
+  # Relative assets needed to deploy to Github Pages
+  activate :relative_assets
+  set :site_url, "/repo-name"
+end
