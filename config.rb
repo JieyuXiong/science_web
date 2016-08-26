@@ -110,8 +110,11 @@ end
 set :site_url, ""
 # ...
 
+
+activate :relative_assets
+set :relative_links, true
 configure :build do
   # Relative assets needed to deploy to Github Pages
   activate :relative_assets
-  set :site_url, "/science_web"
+  set :base_url, "/"
 end
