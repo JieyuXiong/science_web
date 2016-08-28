@@ -43,6 +43,52 @@ body {
 // 	margin-top: -20px;
 // }
 
+//////////////////////////////hero_text
+.hero_text_wrapper {
+	position: absolute;
+	top: 240px;
+	margin-left: 8%;
+	width: 100%;
+	@include media($desktop-small){
+      top: 220px;
+	}
+	@include media($tablet){
+      top: 180px;
+	}
+	@include media($tablet-portrait){
+      display: none;
+	}
+}
+
+.hero_text_large {
+	font-family: georgia;
+	font-weight: bold;
+	color: $title-text;
+	font-size: 24px;
+	width: 34%;
+	@include media($desktop-small){
+      font-size: 22px;
+	  width: 34%;
+	}
+	@include media($tablet){
+      font-size: 20px;
+	  width: 40%;
+	}
+}
+
+.hero_text_small {
+	font-family: georgia;
+	font-style: italic;
+	font-size: 13px;
+	color: $description-text;
+	width: 34%;
+	margin-top: 20px;
+	@include media($tablet){
+      display: none;
+	}
+}
+
+
 ///////////////////////////mag
 .magzine_wrapper {
 	@include outer-container;
@@ -893,7 +939,7 @@ body {
 	position: relative;
 	display: inline-block;
 	margin: 60px 0px 0px 0px;
-	background-image: url(../../images_s/report/report.png);
+	background-image: url(../images_s/report/report.png);
 	background-size: 100% 100%;
 	@include media($desktop){
       @include span-columns (12);
@@ -1092,7 +1138,7 @@ body {
 	right: 0;
 	left: 0;
 	background-color: white;
-	background-image: url(../../images_s/information/info_bg.png);
+	background-image: url(../images_s/information/info_bg.png);
 	background-size: 100% 100%;
 }
 
