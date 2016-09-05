@@ -1,0 +1,3234 @@
+/* line 1, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"],
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  /* line 21, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_buttons.scss */
+  button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
+  button:hover,
+  button:focus {
+    background-color: #2c5999;
+    color: #fff; }
+  /* line 27, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_buttons.scss */
+  button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  margin: 0 0 0.75em;
+  padding: 1.5em; }
+
+/* line 8, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+  label.required::after {
+    content: "*"; }
+  /* line 24, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple],
+textarea {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color;
+  width: 100%; }
+  /* line 44, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+  select[multiple=multiple]:hover,
+  textarea:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+  select[multiple=multiple]:focus,
+  textarea:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 55, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 69, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 74, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+/* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_tables.scss */
+table {
+  -webkit-font-feature-settings: "kern", "liga", "tnum";
+  -moz-font-feature-settings: "kern", "liga", "tnum";
+  -ms-font-feature-settings: "kern", "liga", "tnum";
+  font-feature-settings: "kern", "liga", "tnum";
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 9, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 16, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+/* line 21, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-feature-settings: "kern", "liga", "pnum";
+  -moz-font-feature-settings: "kern", "liga", "pnum";
+  -ms-font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+/* line 22, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 26, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  transition: color 0.1s linear; }
+  /* line 31, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+  a:active, a:focus, a:hover {
+    color: #2c5999; }
+  /* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    outline: none; }
+
+/* line 43, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 51, /Users/jieyu.xiong/workspace/science2/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* Bitters needs to be imported before Neat */
+/* line 4, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 9, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 8, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.nav {
+  height: 100px;
+  background-image: url(../images_s/header/bg.png);
+  background-size: 100% 100%; }
+  @media screen and (max-width: 1024px) {
+    /* line 8, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+    .nav {
+      height: 70px; } }
+
+/* line 17, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.wrapper {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  padding: 0em 0em 0em 0em; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 1024px) {
+    /* line 17, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+    .wrapper {
+      height: 70px; } }
+
+/* line 26, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.s-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0px 0px;
+  z-index: 100;
+  transition: top 0.6s; }
+
+/* line 36, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.navRow {
+  display: block;
+  display: table;
+  margin: 0 auto;
+  float: center;
+  padding: 0.8em 0em 0em 0em;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .navRow::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 42, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+  .navRow li {
+    display: inline;
+    margin: 0em 2em;
+    font-size: 12px;
+    color: #141414;
+    font-weight: 500;
+    letter-spacing: 1px; }
+    @media screen and (max-width: 1200px) {
+      /* line 42, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+      .navRow li {
+        margin: 0em 1.5em;
+        font-size: 11px; } }
+    @media screen and (max-width: 1024px) {
+      /* line 42, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+      .navRow li {
+        display: none; } }
+  /* line 58, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+  .navRow img {
+    width: 13px;
+    height: 13px; }
+  /* line 62, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+  .navRow a {
+    color: #141414;
+    padding-bottom: 0.8em; }
+  /* line 67, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+  .navRow a:hover {
+    color: #0F538B;
+    border-bottom: 0.3em solid #176CB0;
+    padding-bottom: 1em;
+    transition: color 0.5s ease, padding-bottom 0.15s ease; }
+
+/* line 81, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.logo {
+  display: block;
+  display: table;
+  margin: 0 auto;
+  float: center;
+  padding: 1em 0em 0em 0em;
+  width: 100px; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .logo::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 88, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+  .logo li {
+    display: inline;
+    margin: 0;
+    width: 100%; }
+
+/* line 96, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.box {
+  width: 22%;
+  background-color: black; }
+
+/* line 103, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.s-header.off-canvas {
+  top: -100px; }
+
+/* line 106, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_header.scss */
+.s-header.fixed {
+  top: 0;
+  z-index: 9999; }
+
+/* line 24, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+body {
+  background: #EDEEEF;
+  margin: 0 auto; }
+
+/* line 30, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.hero_img img {
+  width: 100%; }
+@media screen and (max-width: 768px) {
+  /* line 29, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+  .hero_img {
+    width: 110%; } }
+@media screen and (max-width: 640px) {
+  /* line 29, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+  .hero_img {
+    width: 120%;
+    margin-left: -40px; } }
+
+/* line 47, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.hero_text_wrapper {
+  position: absolute;
+  top: 240px;
+  margin-left: 8%;
+  width: 100%; }
+  @media screen and (max-width: 1200px) {
+    /* line 47, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_wrapper {
+      top: 220px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 47, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_wrapper {
+      top: 180px; } }
+  @media screen and (max-width: 768px) {
+    /* line 47, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_wrapper {
+      display: none; } }
+
+/* line 63, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.hero_text_large {
+  font-family: georgia;
+  font-weight: bold;
+  color: #232323;
+  font-size: 24px;
+  width: 34%; }
+  @media screen and (max-width: 1200px) {
+    /* line 63, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_large {
+      font-size: 22px;
+      width: 34%; } }
+  @media screen and (max-width: 1024px) {
+    /* line 63, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_large {
+      font-size: 20px;
+      width: 40%; } }
+
+/* line 79, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.hero_text_small {
+  font-family: georgia;
+  font-style: italic;
+  font-size: 13px;
+  color: #656565;
+  width: 34%;
+  margin-top: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 79, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .hero_text_small {
+      display: none; } }
+
+/* line 93, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.magzine_wrapper {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -350px;
+  padding: 0px 20px; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .magzine_wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 1200px) {
+    /* line 93, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .magzine_wrapper {
+      margin-top: -300px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 93, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .magzine_wrapper {
+      margin-top: -250px; } }
+  @media screen and (max-width: 768px) {
+    /* line 93, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .magzine_wrapper {
+      margin-top: -200px; } }
+  @media screen and (max-width: 640px) {
+    /* line 93, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .magzine_wrapper {
+      margin-top: -100px; } }
+
+/* line 111, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.index_row {
+  display: block; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .index_row::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 115, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_large_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  @media screen and (min-width: 1200px) {
+    /* line 115, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_large_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 55.81561%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_large_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 115, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_large_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 55.81561%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_large_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 115, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_large_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 19.73454%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_large_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 115, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_large_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_large_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 133, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_small_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  @media screen and (min-width: 1200px) {
+    /* line 133, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 19.73454%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_small_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 133, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 19.73454%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_small_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 133, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 19.73454%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_small_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 133, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .mag_box_small_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 152, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_large_wrapper:after {
+  padding-top: 46.5%;
+  display: block;
+  content: ''; }
+  @media screen and (max-width: 1024px) {
+    /* line 152, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_box_large_wrapper:after {
+      padding-top: 131.25%; } }
+
+/* line 161, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_small_wrapper:after {
+  padding-top: 131.25%;
+  display: block;
+  content: ''; }
+
+/* line 167, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_large {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #04386B; }
+
+/* line 176, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_small {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #04386B; }
+
+/* line 185, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_picBox {
+  z-index: 1;
+  width: 35.9%;
+  background-color: #04386B;
+  height: 100%;
+  float: left;
+  margin-right: 0px; }
+  @media screen and (max-width: 1024px) {
+    /* line 185, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_picBox {
+      width: 100%; } }
+
+/* line 197, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_large:hover .thumbnail img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: .8; }
+
+/* line 204, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_box_small:hover .thumbnail_small img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: .8; }
+
+/* line 211, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.thumbnail {
+  position: absolute;
+  background: #04386B;
+  overflow: hidden;
+  width: 35.9%;
+  height: 100%; }
+  @media screen and (max-width: 1024px) {
+    /* line 211, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .thumbnail {
+      width: 100%; } }
+
+/* line 222, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.thumbnail_small {
+  position: absolute;
+  background: #04386B;
+  overflow: hidden;
+  height: 100%; }
+
+/* line 229, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.thumbnail img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 240, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.thumbnail_small img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  height: 100%; }
+
+/* line 249, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.mag_text {
+  position: relative;
+  width: 64.1%;
+  float: right; }
+  @media screen and (min-width: 1200px) {
+    /* line 249, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_text {
+      padding: 16px 26px 6px 26px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 249, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_text {
+      padding: 12px 20px 4px 20px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 249, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .mag_text {
+      display: none; } }
+
+/* line 264, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.number {
+  color: #ABABAB;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px; }
+
+/* line 271, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.article1 {
+  color: white;
+  font-family: georgia;
+  font-weight: bold; }
+  @media screen and (min-width: 1200px) {
+    /* line 271, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .article1 {
+      font-size: 15px;
+      line-height: 120%; } }
+  @media screen and (max-width: 1200px) {
+    /* line 271, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .article1 {
+      font-size: 14px;
+      line-height: 120%; } }
+  @media screen and (max-width: 1024px) {
+    /* line 271, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .article1 {
+      font-size: 14px;
+      line-height: 120%; } }
+
+/* line 289, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.line {
+  margin-top: 10px;
+  height: 2px;
+  width: 26px;
+  background-color: white; }
+  @media screen and (max-width: 1024px) {
+    /* line 289, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line {
+      display: none; } }
+
+/* line 299, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.tag {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: white; }
+  @media screen and (max-width: 1024px) {
+    /* line 299, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag {
+      display: none; } }
+
+/* line 310, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.shelf_wrapper {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding: 0px 20px; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .shelf_wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 316, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.section_title {
+  margin-bottom: 20px; }
+  /* line 317, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+  .section_title h1 {
+    color: #232323;
+    text-align: center;
+    font-family: helvetica;
+    font-weight: medium;
+    letter-spacing: 2px;
+    font-size: 14px; }
+
+/* line 328, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.section_line {
+  height: 4px;
+  width: 26px;
+  background-color: #656565;
+  margin: 0 auto; }
+
+/* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_big_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_big_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_big_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_big_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_big_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_big_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    /* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_big_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_big_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 335, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_big_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_big_wrapper:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_big_wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_big_wrapper:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 359, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big_wrapper:after {
+  display: block;
+  content: '';
+  padding-top: 143.46%; }
+
+/* line 365, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 379, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_picBox_big {
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  height: 32.85%;
+  float: top; }
+
+/* line 387, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_big {
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  height: 32.85%; }
+
+/* line 395, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_big img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 404, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big_text {
+  height: 47.15%;
+  padding: 16px 16px; }
+
+/* line 409, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.date {
+  font-size: 11px;
+  font-family: helvetica;
+  color: #999999;
+  line-height: 14px; }
+  @media screen and (max-width: 1024px) {
+    /* line 409, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .date {
+      display: none; } }
+
+/* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.post_title {
+  font-family: georgia;
+  color: #232323;
+  font-weight: bold; }
+  @media screen and (min-width: 1200px) {
+    /* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 12px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 12px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title {
+      font-size: 15px;
+      line-height: 19px;
+      margin-top: 2%; } }
+  @media screen and (max-width: 768px) {
+    /* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title {
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 2%; } }
+  @media screen and (max-width: 640px) {
+    /* line 419, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title {
+      font-size: 17px;
+      line-height: 21px;
+      margin-top: 2%; } }
+
+/* line 450, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.description {
+  font-family: georgia;
+  color: #656565;
+  font-style: italic; }
+  @media screen and (min-width: 1200px) {
+    /* line 450, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .description {
+      font-size: 13px;
+      line-height: 18px;
+      margin-top: 16px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 450, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .description {
+      font-size: 11px;
+      line-height: 15px;
+      margin-top: 16px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 450, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .description {
+      display: none; } }
+
+/* line 469, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big_text_bottom {
+  height: 20%;
+  float: bottom;
+  padding: 16px 16px; }
+
+/* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.line_dark {
+  height: 2px;
+  background-color: #656565; }
+  @media screen and (min-width: 1200px) {
+    /* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark {
+      margin-top: 16px;
+      width: 40px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark {
+      margin-top: 18px;
+      width: 40px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark {
+      margin-top: 6.5%;
+      width: 40px; } }
+  @media screen and (max-width: 768px) {
+    /* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    /* line 475, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark {
+      margin-top: 6.5%;
+      width: 40px;
+      display: block; } }
+
+/* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.tag_big {
+  font-family: helvetica;
+  color: #141414;
+  letter-spacing: 1.35px; }
+  @media screen and (min-width: 1200px) {
+    /* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big {
+      margin-top: 12px;
+      font-size: 11px;
+      letter-spacing: 1.35px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big {
+      margin-top: 10px;
+      font-size: 10px;
+      letter-spacing: 1.2px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big {
+      margin-top: 3.5%;
+      font-size: 9px;
+      letter-spacing: 1px; } }
+  @media screen and (max-width: 768px) {
+    /* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    /* line 500, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big {
+      display: block;
+      margin-top: 3.5%;
+      font-size: 9px;
+      letter-spacing: 1px; } }
+
+/* line 530, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big:hover .card_thumbnail_big img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 536, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_big img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 545, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_big:hover {
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3); }
+
+/* line 554, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 554, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_small_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 554, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_small_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_small_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 554, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_small_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_small_wrapper:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_small_wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_small_wrapper:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 572, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small_wrapper:after {
+  padding-top: 87.17%;
+  display: block;
+  content: ''; }
+
+/* line 578, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 592, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_picBox_small {
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  height: 36.04%;
+  float: top; }
+
+/* line 600, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_small {
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  height: 36.04%; }
+
+/* line 608, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_small img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 617, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small_text {
+  height: 39%;
+  padding: 6px 16px 0px 16px; }
+
+/* line 624, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small_text_bottom {
+  height: 16%;
+  float: bottom;
+  padding: 0px 16px; }
+
+/* line 630, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small:hover .card_thumbnail_small img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 636, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_small img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 645, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_small:hover {
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3); }
+
+/* line 651, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.line_dark2 {
+  height: 2px;
+  background-color: #656565;
+  width: 40px; }
+  @media screen and (min-width: 1200px) {
+    /* line 651, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark2 {
+      margin-top: 16px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 651, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark2 {
+      margin-top: 11%; } }
+  @media screen and (max-width: 1024px) {
+    /* line 651, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark2 {
+      display: none; } }
+
+/* line 666, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.tag_big2 {
+  font-family: helvetica;
+  color: #141414;
+  letter-spacing: 1.35px; }
+  @media screen and (min-width: 1200px) {
+    /* line 666, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big2 {
+      margin-top: 12px;
+      font-size: 11px;
+      letter-spacing: 1.35px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 666, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big2 {
+      margin-top: 8px;
+      font-size: 10px;
+      letter-spacing: 1.2px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 666, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_big2 {
+      display: none; } }
+
+/* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.post_title2 {
+  font-family: georgia;
+  color: #232323;
+  font-weight: bold; }
+  @media screen and (min-width: 1200px) {
+    /* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title2 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 12px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title2 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 12px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title2 {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 2%; } }
+  @media screen and (max-width: 768px) {
+    /* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title2 {
+      font-size: 13px;
+      line-height: 17px;
+      margin-top: 1%; } }
+  @media screen and (max-width: 640px) {
+    /* line 686, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title2 {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 2%; } }
+
+/* line 722, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 722, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 722, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    /* line 722, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 722, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_tiny_wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_tiny_wrapper:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 743, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper:after {
+  padding-top: 34.03%;
+  display: block;
+  content: ''; }
+
+/* line 749, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper_1 {
+  position: relative;
+  display: inline-block;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 749, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_1:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 749, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_1:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    /* line 749, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_1 {
+      display: none; } }
+  @media screen and (max-width: 640px) {
+    /* line 749, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_1 {
+      margin: 40px 0px 0px 0px;
+      display: block;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_1:last-child {
+        margin-right: 0; } }
+
+/* line 769, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper_1:after {
+  padding-top: 34.03%;
+  display: block;
+  content: ''; }
+
+/* line 775, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 789, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_picBox_tiny {
+  z-index: 1;
+  width: 34.03%;
+  background-color: white;
+  height: 100%;
+  float: left; }
+
+/* line 797, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_tiny {
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  width: 34.03%;
+  height: 100%; }
+
+/* line 805, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_tiny img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 814, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_text {
+  height: 58%;
+  width: 65.97%;
+  padding: 8px 10px 0px 10px;
+  float: left; }
+
+/* line 821, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_text_bottom {
+  height: 42%;
+  width: 65.97%;
+  float: left;
+  padding: 0px 10px; }
+
+/* line 828, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny:hover .card_thumbnail_tiny img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 834, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_tiny img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 843, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny:hover {
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3); }
+
+/* line 849, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.post_title_tiny {
+  font-size: 14px;
+  font-family: georgia;
+  color: #232323;
+  line-height: 17px;
+  font-weight: bold;
+  margin-top: 0px; }
+  @media screen and (max-width: 1200px) {
+    /* line 849, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title_tiny {
+      font-size: 13px;
+      line-height: 16px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 849, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title_tiny {
+      font-size: 12px;
+      line-height: 15px; } }
+  @media screen and (max-width: 640px) {
+    /* line 849, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .post_title_tiny {
+      font-size: 13px;
+      line-height: 16px; } }
+
+/* line 871, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.tag_tiny {
+  margin-top: 6px;
+  font-size: 9px;
+  font-family: helvetica;
+  color: #141414;
+  letter-spacing: 1.35px; }
+  @media screen and (max-width: 1200px) {
+    /* line 871, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_tiny {
+      margin-top: 5px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 871, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_tiny {
+      display: none; } }
+
+/* line 887, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_recommend {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #E4E6E8;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 901, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_recommend_text {
+  width: 100%;
+  height: 100%;
+  padding: 16px 16px;
+  float: left;
+  background-color: #E4E6E8; }
+  @media screen and (max-width: 1200px) {
+    /* line 901, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_recommend_text {
+      padding: 14px 16px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 901, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_recommend_text {
+      padding: 6px 12px; } }
+
+/* line 915, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.recommend_text {
+  margin-bottom: 5px;
+  color: #999999;
+  font-size: 12px;
+  font-family: helvetica; }
+  @media screen and (max-width: 1024px) {
+    /* line 915, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .recommend_text {
+      font-size: 10px;
+      margin-bottom: 3px; } }
+
+/* line 926, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.line_dark_tiny {
+  margin-top: 14px;
+  height: 2px;
+  width: 20px;
+  background-color: #656565; }
+  @media screen and (max-width: 1024px) {
+    /* line 926, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .line_dark_tiny {
+      display: none; } }
+
+/* line 938, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_special_wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 60px 0px 0px 0px;
+  background-image: url(../images_s/report/report.png);
+  background-size: 100% 100%; }
+  @media screen and (min-width: 1200px) {
+    /* line 938, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_special_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_special_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 938, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_special_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_special_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 938, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_special_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_special_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 938, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_special_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_special_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 959, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_special_wrapper:after {
+  padding-top: 32.08%;
+  display: block;
+  content: ''; }
+
+/* line 965, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.text_special_wrapper {
+  position: absolute;
+  padding-top: 60px;
+  padding-left: 80px;
+  width: 40%;
+  height: 100%;
+  float: left; }
+  @media screen and (max-width: 1200px) {
+    /* line 965, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_special_wrapper {
+      padding-top: 50px;
+      padding-left: 70px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 965, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_special_wrapper {
+      width: 50%;
+      padding-top: 32px;
+      padding-left: 50px; } }
+  @media screen and (max-width: 768px) {
+    /* line 965, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_special_wrapper {
+      width: 100%;
+      padding-top: 30px;
+      padding-left: 40px; } }
+  @media screen and (max-width: 640px) {
+    /* line 965, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_special_wrapper {
+      width: 100%;
+      padding-top: 20px;
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+/* line 994, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_title {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: bold;
+  color: white; }
+  @media screen and (max-width: 1200px) {
+    /* line 994, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_title {
+      font-size: 28px;
+      line-height: 38px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 994, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_title {
+      font-size: 24px;
+      line-height: 32px; } }
+  @media screen and (max-width: 768px) {
+    /* line 994, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_title {
+      font-size: 24px;
+      line-height: 32px; } }
+
+/* line 1015, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_description {
+  margin-top: 48px;
+  font-size: 18px;
+  font-family: Georgia;
+  color: white; }
+  @media screen and (max-width: 1200px) {
+    /* line 1015, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_description {
+      font-size: 17px;
+      margin-top: 36px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1015, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_description {
+      font-size: 14px;
+      margin-top: 30px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1015, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_description {
+      display: none; } }
+
+/* line 1033, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_time {
+  margin-top: 48px;
+  font-size: 12px;
+  font-family: helvetica;
+  color: white; }
+  @media screen and (max-width: 1200px) {
+    /* line 1033, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_time {
+      margin-top: 40px;
+      font-size: 12px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1033, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_time {
+      margin-top: 30px;
+      font-size: 12px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1033, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_time {
+      display: none; } }
+
+/* line 1064, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_special_wrapper {
+  display: inline-block;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: right;
+  margin-top: 22px; }
+  @media screen and (max-width: 1200px) {
+    /* line 1064, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_special_wrapper {
+      margin-top: 20px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1064, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_special_wrapper {
+      margin-top: 16px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1064, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_special_wrapper {
+      display: none; } }
+
+/* line 1082, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper_R {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 8px 0px 8px 50%; }
+  @media screen and (min-width: 1200px) {
+    /* line 1082, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_R {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_R:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1082, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_R {
+      margin: 6px 0px 6px 50%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_R:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1082, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_tiny_wrapper_R {
+      margin: 5px 0px 5px 50%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_tiny_wrapper_R:last-child {
+        margin-right: 0; } }
+
+/* line 1100, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_tiny_wrapper_R:after {
+  padding-top: 33%;
+  display: block;
+  content: ''; }
+
+/* line 1109, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_info_wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 1109, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_info_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_info_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1109, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_info_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_info_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1109, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_info_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_info_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 1109, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_info_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_info_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 1128, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_info_wrapper:after {
+  padding-top: 32.08%;
+  display: block;
+  content: ''; }
+
+/* line 1134, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  background-image: url(../images_s/information/info_bg.png);
+  background-size: 100% 100%; }
+
+/* line 1145, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.text_info_wrapper {
+  position: relative;
+  padding-top: 40px;
+  padding-right: 40px;
+  width: 45%;
+  height: 100%;
+  float: right; }
+  @media screen and (max-width: 1200px) {
+    /* line 1145, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_info_wrapper {
+      padding-top: 30px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1145, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_info_wrapper {
+      padding-top: 16px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1145, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .text_info_wrapper {
+      padding-top: 16px;
+      width: 55%;
+      padding-right: 16px; } }
+
+/* line 1165, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_info_title {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: bold;
+  color: #232323; }
+  @media screen and (max-width: 1200px) {
+    /* line 1165, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_title {
+      font-size: 28px;
+      line-height: 38px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1165, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_title {
+      font-size: 24px;
+      line-height: 34px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1165, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_title {
+      font-size: 20px;
+      line-height: 30px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1165, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_title {
+      font-size: 18px;
+      line-height: 25px; } }
+
+/* line 1190, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_info_description {
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: Georgia;
+  color: #656565; }
+  @media screen and (max-width: 1200px) {
+    /* line 1190, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_description {
+      margin-top: 26px;
+      font-size: 18px; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1190, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_description {
+      display: none; } }
+
+/* line 1204, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.topic_info_time {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: helvetica;
+  color: #999999; }
+  @media screen and (max-width: 1200px) {
+    /* line 1204, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_time {
+      margin-bottom: 16px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1204, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .topic_info_time {
+      display: none; } }
+
+/* line 1217, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.view_more {
+  position: relative;
+  width: 140px;
+  height: 36px;
+  border-width: 1px;
+  border-color: #999999;
+  border-style: solid;
+  text-align: center;
+  line-height: 36px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: helvetica;
+  margin-top: 58px;
+  margin-left: 3px;
+  cursor: pointer;
+  color: #141414;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+  @media screen and (max-width: 1200px) {
+    /* line 1217, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .view_more {
+      margin-top: 11%; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1217, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .view_more {
+      margin-top: 19%;
+      width: 120px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 11px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1217, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .view_more {
+      display: none; } }
+
+/* line 1254, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.view_more:hover {
+  background-color: #0F538B;
+  border-width: 1px;
+  border-color: #0F538B;
+  border-style: solid;
+  color: white; }
+
+/* line 1264, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 1264, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_video_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1264, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_video_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 1264, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .card_video_wrapper {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 1283, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video_wrapper:after {
+  padding-top: 75.99%;
+  display: block;
+  content: ''; }
+
+/* line 1289, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1303, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_picBox_video {
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  height: 74.53%;
+  float: top; }
+
+/* line 1311, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_video {
+  position: absolute;
+  background: white;
+  overflow: hidden;
+  width: 100%;
+  height: 74.53%; }
+
+/* line 1319, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_video img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 1328, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video_text {
+  height: 25.47%;
+  width: 100%; }
+
+/* line 1333, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video:hover .card_thumbnail_video img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05); }
+
+/* line 1339, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_thumbnail_video img {
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s;
+  width: 100%; }
+
+/* line 1354, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.video_title {
+  font-family: georgia;
+  font-size: 15px;
+  padding-top: 5%;
+  padding-left: 4%;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  overflow: hidden; }
+  @media screen and (max-width: 1024px) {
+    /* line 1354, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_title {
+      font-size: 14px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1354, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_title {
+      font-size: 12px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1354, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_title {
+      font-size: 15px; } }
+
+/* line 1376, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.video_play_button {
+  display: block;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 21%;
+  margin-left: 43.4%;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 50%;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+  @media screen and (max-width: 1024px) {
+    /* line 1376, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_play_button {
+      width: 34px;
+      height: 34px;
+      margin-top: 20%;
+      margin-left: 41.8%; } }
+  @media screen and (max-width: 768px) {
+    /* line 1376, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_play_button {
+      width: 30px;
+      height: 30px;
+      margin-top: 19%;
+      margin-left: 40%; } }
+  @media screen and (max-width: 640px) {
+    /* line 1376, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .video_play_button {
+      width: 38px;
+      height: 38px;
+      margin-top: 21%;
+      margin-left: 43.4%; } }
+
+/* line 1416, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.triangle {
+  width: 11px;
+  height: 13px;
+  margin-top: 7px;
+  margin-left: 13.5px;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+  @media screen and (max-width: 1024px) {
+    /* line 1416, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1416, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle {
+      margin-top: 2px;
+      margin-left: 10px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1416, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle {
+      width: 11px;
+      height: 13px;
+      margin-top: 7px;
+      margin-left: 13.5px; } }
+
+/* line 1448, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.card_video:hover .video_play_button {
+  background-color: #0F538B;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid; }
+
+/* line 1457, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px 0px 0px 0px;
+  height: 90px; }
+  @media screen and (min-width: 1200px) {
+    /* line 1457, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .podcast_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1457, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .podcast_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1457, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .podcast_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 1474, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #EDEEEF;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1490, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_play_button_wrapper {
+  display: block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  margin-top: 29px;
+  margin-left: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 1490, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_play_button_wrapper {
+      width: 34px;
+      height: 34px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1490, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_play_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1490, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_play_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+
+/* line 1518, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_play_button {
+  float: left;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #D5D6D6;
+  border-radius: 50%;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1533, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.triangle_podcast {
+  width: 11px;
+  height: 13px;
+  margin-top: 6.5px;
+  margin-left: 14.5px; }
+  @media screen and (max-width: 1024px) {
+    /* line 1533, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle_podcast {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1533, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle_podcast {
+      margin-top: 2px;
+      margin-left: 10px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1533, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .triangle_podcast {
+      margin-top: 1.8px;
+      margin-left: 10.5px; } }
+
+/* line 1558, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_download_button_wrapper {
+  display: block;
+  float: left;
+  width: 38px;
+  height: 38px;
+  margin-top: 29px;
+  margin-left: 30px; }
+  @media screen and (max-width: 1024px) {
+    /* line 1558, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_download_button_wrapper {
+      width: 34px;
+      height: 34px;
+      margin-top: 29px;
+      margin-left: 30px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1558, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_download_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1558, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_download_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+
+/* line 1586, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_download_button {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: #D5D6D6;
+  border-radius: 50%;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1600, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.download {
+  width: 12.5px;
+  height: 14.5px;
+  margin-top: 8.5px;
+  margin-left: 12.5px; }
+  @media screen and (max-width: 1024px) {
+    /* line 1600, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .download {
+      width: 11.5px;
+      height: 13.5px;
+      margin-top: 5.5px;
+      margin-left: 11px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1600, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .download {
+      width: 10px;
+      height: 12px;
+      margin-top: 3.5px;
+      margin-left: 9.5px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1600, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .download {
+      width: 10px;
+      height: 12px;
+      margin-top: 3.5px;
+      margin-left: 9.5px; } }
+
+/* line 1628, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_title_wrapper {
+  float: left;
+  display: table;
+  width: 32%;
+  height: 100%;
+  margin-left: 50px;
+  color: #232323;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px; }
+  @media screen and (max-width: 1200px) {
+    /* line 1628, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_title_wrapper {
+      font-size: 17px;
+      line-height: 21px;
+      margin-left: 44px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1628, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_title_wrapper {
+      width: 40%;
+      margin-left: 50px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1628, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_title_wrapper {
+      width: 35%;
+      font-size: 15px;
+      line-height: 19px;
+      margin-left: 40px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1628, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_title_wrapper {
+      width: 60%;
+      font-size: 14px;
+      line-height: 18px; } }
+
+/* line 1661, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_title {
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 5px; }
+
+/* line 1669, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_tag_wrapper {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  width: 10%; }
+  @media screen and (max-width: 1200px) {
+    /* line 1669, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_tag_wrapper {
+      margin-left: 30px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1669, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_tag_wrapper {
+      width: 13%; } }
+  @media screen and (max-width: 640px) {
+    /* line 1669, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_tag_wrapper {
+      display: none; } }
+
+/* line 1685, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.line_podcast {
+  margin-top: 30px;
+  height: 2px;
+  width: 20px;
+  background-color: #656565; }
+
+/* line 1692, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.tag_podcast {
+  margin-top: 10px;
+  font-size: 10px;
+  font-family: helvetica;
+  color: #141414;
+  letter-spacing: 1.35px; }
+  @media screen and (max-width: 768px) {
+    /* line 1692, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .tag_podcast {
+      font-size: 9px; } }
+
+/* line 1705, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_time_wrapper {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  width: 20%; }
+  @media screen and (max-width: 1200px) {
+    /* line 1705, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_time_wrapper {
+      margin-left: 30px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1705, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_time_wrapper {
+      display: none; } }
+
+/* line 1718, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.date_podcast {
+  margin-top: 24px;
+  font-family: helvetica;
+  font-size: 13px;
+  line-height: 16px;
+  color: #999999; }
+  @media screen and (max-width: 1200px) {
+    /* line 1718, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .date_podcast {
+      font-size: 12px;
+      line-height: 15px; } }
+
+/* line 1730, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.time_podcast {
+  margin-top: 4px;
+  font-family: helvetica;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999999;
+  font-size: 11px;
+  line-height: 14px; }
+
+/* line 1742, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_filter_wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 60px 0px 0px 0px;
+  height: 40px; }
+  @media screen and (min-width: 1200px) {
+    /* line 1742, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_filter_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .podcast_filter_wrapper:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 1742, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .podcast_filter_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .podcast_filter_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 1755, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1768, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.recent_wrapper {
+  display: block;
+  float: left;
+  font-family: helvetica;
+  font-size: 12px;
+  letter-spacing: 1.75px;
+  color: #999999;
+  width: 32%;
+  margin-left: 176px; }
+  @media screen and (max-width: 1200px) {
+    /* line 1768, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .recent_wrapper {
+      width: 30%;
+      margin-left: 170px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1768, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .recent_wrapper {
+      width: 36.5%;
+      margin-left: 170px;
+      font-size: 11px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1768, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .recent_wrapper {
+      width: 38%;
+      margin-left: 142px;
+      font-size: 11px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1768, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .recent_wrapper {
+      width: 50%;
+      margin-left: 142px;
+      font-size: 11px; } }
+
+/* line 1798, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.filter_text {
+  display: block;
+  float: left; }
+
+/* line 1803, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.arrow_img {
+  display: block;
+  float: left;
+  width: 12px;
+  height: 8px;
+  margin-left: 8px; }
+
+/* line 1811, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.series_wrapper,
+.topics_wrapper {
+  display: block;
+  float: left;
+  margin-left: 45px;
+  width: 10%;
+  font-family: helvetica;
+  font-size: 12px;
+  letter-spacing: 1.75px;
+  color: #999999; }
+  @media screen and (max-width: 1200px) {
+    /* line 1811, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .series_wrapper,
+    .topics_wrapper {
+      width: 8%;
+      margin-left: 52px; } }
+  @media screen and (max-width: 1024px) {
+    /* line 1811, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .series_wrapper,
+    .topics_wrapper {
+      width: 10%;
+      margin-left: 60px;
+      font-size: 11px; } }
+  @media screen and (max-width: 768px) {
+    /* line 1811, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .series_wrapper,
+    .topics_wrapper {
+      width: 15%;
+      margin-left: 10px;
+      font-size: 11px; } }
+  @media screen and (max-width: 640px) {
+    /* line 1811, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+    .series_wrapper,
+    .topics_wrapper {
+      display: none; } }
+
+/* line 1841, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_card2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px;
+  border-top-color: #DEDEDE;
+  border-top-style: solid;
+  background-color: #EDEEEF;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 1860, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_play_button:hover {
+  background-color: #0F538B; }
+
+/* line 1864, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_download_button:hover {
+  background-color: #0F538B; }
+
+/* line 1868, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_card:hover {
+  background-color: white; }
+
+/* line 1872, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index.scss */
+.podcast_card2:hover {
+  background-color: white; }
+
+/* line 24, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+body {
+  background: #EDEEEF;
+  margin: 0 auto; }
+
+/* line 34, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.top_wrapper {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 1.2rem; }
+
+/* line 40, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+img.topBG {
+  width: 100%; }
+
+/* line 44, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.top_category_title {
+  position: relative;
+  text-align: center;
+  font-family: Georgia;
+  font-size: 30px;
+  letter-spacing: 8px;
+  color: white;
+  margin-top: -160px; }
+
+/* line 54, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.top_info_text {
+  position: relative;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+  margin-top: 10px; }
+
+/* line 64, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.sub_title {
+  display: block;
+  display: table;
+  margin: 0 auto;
+  float: center;
+  padding: 0.8em 0em 0em 0em; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .sub_title::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 70, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+  .sub_title li {
+    display: inline;
+    margin: 0em 2em;
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 1px; }
+  /* line 77, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+  .sub_title li:first-child {
+    color: #232323;
+    font-style: bold; }
+
+/* line 84, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.card_video_wrapper2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 60px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 84, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+    .card_video_wrapper2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(4n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(4n+1) {
+        clear: left; } }
+  @media screen and (max-width: 1200px) {
+    /* line 84, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+    .card_video_wrapper2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(4n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(4n+1) {
+        clear: left; } }
+  @media screen and (max-width: 640px) {
+    /* line 84, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+    .card_video_wrapper2 {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 105, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_index2.scss */
+.card_video_wrapper2:after {
+  padding-top: 75.99%;
+  display: block;
+  content: ''; }
+
+/* line 27, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+body {
+  background: #EDEEEF;
+  margin: 0 auto; }
+
+/* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 80px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .post_page_wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .post_page_wrapper:last-child {
+        margin-right: 0; } }
+
+/* line 47, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_date {
+  font-family: helvetica;
+  font-size: 13px;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 10px; }
+
+/* line 55, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_title {
+  font-family: georgia;
+  font-size: 36px;
+  color: #232323;
+  text-align: center;
+  margin-bottom: 36px;
+  font-weight: bold; }
+
+/* line 64, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_divider {
+  height: 1px;
+  background-color: #CDCDCD; }
+
+/* line 70, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_category {
+  position: relative;
+  width: 100%;
+  display: inline-block; }
+
+/* line 76, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_tag_wrapper {
+  display: block;
+  float: left;
+  width: 10%; }
+
+/* line 82, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_line_podcast {
+  margin-top: 30px;
+  height: 2px;
+  width: 41px;
+  background-color: #656565; }
+
+/* line 89, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_tag_podcast {
+  margin-top: 10px;
+  font-size: 10px;
+  font-family: helvetica;
+  color: #141414;
+  letter-spacing: 1.35px; }
+
+/* line 100, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.share_button_wrapper {
+  display: block;
+  float: right;
+  width: 38px;
+  height: 38px;
+  margin-top: 24px;
+  margin-left: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 100, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .share_button_wrapper {
+      width: 34px;
+      height: 34px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+  @media screen and (max-width: 768px) {
+    /* line 100, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .share_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+  @media screen and (max-width: 640px) {
+    /* line 100, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .share_button_wrapper {
+      width: 30px;
+      height: 30px;
+      margin-top: 29px;
+      margin-left: 20px; } }
+
+/* line 128, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.share_button {
+  float: left;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 50%;
+  border-color: #9A9A9A;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  -webkit-transition: all 0.22s linear 0s;
+  -moz-transition: all 0.22s linear 0s;
+  -ms-transition: all 0.22s linear 0s;
+  -o-transition: all 0.22s linear 0s;
+  transition: all 0.22s linear 0s; }
+
+/* line 146, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.share_button:hover {
+  background-color: white; }
+
+/* line 150, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.facebook_icon {
+  width: 8px;
+  height: 16px;
+  margin-top: 7.5px;
+  margin-left: 13.3px; }
+  @media screen and (max-width: 1024px) {
+    /* line 150, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .facebook_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+  @media screen and (max-width: 768px) {
+    /* line 150, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .facebook_icon {
+      margin-top: 2px;
+      margin-left: 10px; } }
+  @media screen and (max-width: 640px) {
+    /* line 150, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .facebook_icon {
+      margin-top: 1.8px;
+      margin-left: 10.5px; } }
+
+/* line 174, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.twitter_icon {
+  width: 15px;
+  height: 12.6px;
+  margin-top: 6.5px;
+  margin-left: 11px; }
+  @media screen and (max-width: 1024px) {
+    /* line 174, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .twitter_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+
+/* line 194, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.reddit_icon {
+  width: 20px;
+  height: 16.2px;
+  margin-top: 7.5px;
+  margin-left: 7.8px; }
+  @media screen and (max-width: 1024px) {
+    /* line 194, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .reddit_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+
+/* line 214, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.share_icon {
+  width: 14px;
+  height: 12px;
+  margin-top: 5px;
+  margin-left: 10.5px; }
+  @media screen and (max-width: 1024px) {
+    /* line 214, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .share_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+
+/* line 234, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.email_icon {
+  width: 14px;
+  height: 12px;
+  margin-top: 5.4px;
+  margin-left: 10.5px; }
+  @media screen and (max-width: 1024px) {
+    /* line 234, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .email_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+
+/* line 254, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.print_icon {
+  width: 16px;
+  height: 14.9px;
+  margin-top: 6.5px;
+  margin-left: 10.2px; }
+  @media screen and (max-width: 1024px) {
+    /* line 254, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+    .print_icon {
+      width: 9px;
+      height: 11px;
+      margin-top: 3px;
+      margin-left: 13.5px; } }
+
+/* line 276, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_page_body {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 64px; }
+
+/* line 283, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.post_index {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 18px;
+  color: #656565; }
+
+/* line 290, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_divider {
+  margin: 0 auto;
+  width: 50px;
+  height: 4px;
+  background-color: #656565;
+  margin-top: 36px;
+  margin-bottom: 46px; }
+
+/* line 299, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_text {
+  font-size: 17px;
+  color: #323232;
+  font-family: georgia;
+  margin-top: 40px; }
+
+/* line 306, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_section_title {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 22px;
+  color: #656565;
+  text-align: center;
+  letter-spacing: 1.8px;
+  margin-top: 60px; }
+
+/* line 317, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_picture_wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 34px; }
+
+/* line 325, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_thumbnail {
+  width: 100%; }
+
+/* line 329, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_post.scss */
+.body_picture_description {
+  font-family: helvetica;
+  font-size: 13px;
+  color: #999999; }
+
+/* line 27, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+body {
+  background: #EDEEEF;
+  margin: 0 auto; }
+
+/* line 38, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.video_filter_wrapper {
+  position: relative;
+  margin: 60px 0px 20px 0px;
+  height: 36px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+  .video_filter_wrapper:last-child {
+    margin-right: 0; }
+
+/* line 45, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.video_filter {
+  width: 200px;
+  height: 36px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #979797;
+  float: right; }
+
+/* line 54, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.video_triangle {
+  position: relative;
+  width: 9px;
+  height: 13px;
+  float: right;
+  margin: 2px 20px 0px 0px; }
+
+/* line 62, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.video_filter_text {
+  position: relative;
+  color: #141414;
+  font-size: 16px;
+  font-family: helvetica;
+  letter-spacing: 2px;
+  margin: 6px 0px 0px 20px; }
+
+/* line 72, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.card_video_wrapper2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 28px 0px 0px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 72, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+    .card_video_wrapper2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 72, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+    .card_video_wrapper2 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 640px) {
+    /* line 72, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+    .card_video_wrapper2 {
+      margin: 40px 0px 0px 0px;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .card_video_wrapper2:last-child {
+        margin-right: 0; }
+      /* line 78, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(2n) {
+        margin-right: 0; }
+      /* line 83, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_omega.scss */
+      .card_video_wrapper2:nth-child(2n+1) {
+        clear: left; } }
+
+/* line 91, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_video.scss */
+.card_video_wrapper2:after {
+  padding-top: 75.99%;
+  display: block;
+  content: ''; }
+
+/* line 5, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.sa_footer {
+  display: block;
+  height: 334px;
+  background-image: url(../../images_s/footer/bg.png);
+  background-size: 100% 100%;
+  margin-top: 80px; }
+  @media screen and (max-width: 640px) {
+    /* line 5, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .sa_footer {
+      height: 180px; } }
+
+/* line 16, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.col_wrapper {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  float: top;
+  height: 165px; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .col_wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 640px) {
+    /* line 16, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .col_wrapper {
+      display: none; } }
+
+/* line 26, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.col {
+  height: 100px;
+  margin: 36px 0px; }
+  @media screen and (min-width: 1200px) {
+    /* line 26, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .col {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .col:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
+    /* line 26, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .col {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .col:last-child {
+        margin-right: 0; } }
+
+/* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.col_item {
+  color: #999999;
+  font-size: 13px;
+  font-family: helvetica;
+  text-align: center;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .col_item {
+      font-size: 12px; } }
+  @media screen and (max-width: 768px) {
+    /* line 37, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .col_item {
+      font-size: 11px; } }
+
+/* line 51, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.divider_line {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 1px;
+  background-color: #DEDEDE; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .divider_line::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 640px) {
+    /* line 51, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .divider_line {
+      height: 0px; } }
+
+/* line 61, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.bottom_text_wrapper1 {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .bottom_text_wrapper1::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+/* line 66, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.text1 {
+  font-family: helvetica;
+  font-size: 12px;
+  color: #999999;
+  margin: 30px 0px 30px 0px;
+  padding: 0px 30px 0px 30px; }
+  @media screen and (min-width: 1200px) {
+    /* line 66, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .text1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      /* line 87, /Users/jieyu.xiong/workspace/science2/source/stylesheets/neat/grid/_span-columns.scss */
+      .text1:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 1024px) {
+    /* line 66, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .text1 {
+      font-size: 11px; } }
+
+/* line 80, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.bottom_text_wrapper2 {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 30px; }
+  /* line 20, /Users/jieyu.xiong/workspace/science2/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .bottom_text_wrapper2::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 640px) {
+    /* line 80, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .bottom_text_wrapper2 {
+      margin-bottom: 10px; } }
+
+/* line 89, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.text2_1,
+.text2_2 {
+  font-family: georgia;
+  font-size: 12px;
+  color: #A7A7A7; }
+  @media screen and (max-width: 1024px) {
+    /* line 89, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+    .text2_1,
+    .text2_2 {
+      font-size: 11px; } }
+
+/* line 99, /Users/jieyu.xiong/workspace/science2/source/stylesheets/partials/_footer.scss */
+.footer_bar {
+  position: relative;
+  float: bottom;
+  display: block;
+  width: 100%;
+  height: 12px;
+  background-color: #0F538B; }
